@@ -119,6 +119,21 @@
     		<scope>test</scope>
 		</dependency>
     </dependencies>
+
+    <distributionManagement>
+    		<repository>
+      		    <id>nexus</id>
+     		    <name>sample-releases</name>
+      		    <url>http://34.239.111.3:8081/repository/sample-releases/</url>
+    		</repository>
+	    
+       		<snapshotRepository>
+      		    	<id>nexus</id>
+      		    	<name>sample-snapshots</name>
+      			<url>http://34.239.111.3:8081/repository/sample-snapshots/</url>
+    		</snapshotRepository>
+    </distributionManagement>	
+	
     <build>
         <plugins>
             <plugin>
